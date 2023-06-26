@@ -17,7 +17,12 @@ int main(){
   }
 }
 ```
->  Tarefa 01 - Altere o código e execute-o no falcon++ para que ele imprime todos os números entre 20 e 40. Após conseguir, basta copiar as linhas de código e colar aqui e realize o commit.
+>  Tarefa 01 - Altere o código e execute-o no falcon++ para que ele imprime todos os números entre 20 e 40. Após conseguir, basta copiar as linhas de código e colar aqui e realize o commit. #include<stdio.h>
+int main(){
+	for(int i=20; i<41;i++){
+    printf("\nEsse é o valor de i: %d",i);
+  }
+}
 
 ## Tarefa 2 - Revisando Laços de Repetição: While.
 #### Aqui iremos agora focar no laço de repetição While.
