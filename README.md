@@ -1,7 +1,7 @@
 # Aprendendo Programação em C
 #### Um jeito diferente de aprender programação.
 
-## Tarefa 2 - Revisando Laços de Repetição: for.
+## Revisando Laços de Repetição: for.
 ##### Nessa atividade iremos revisar através de código escrito em C, como podemos trabalhar com esse tipo de variável que pode armazenar dados de um único tipo.
 
 >  Usando novamente o "for" em C.
@@ -24,7 +24,7 @@ int main(){
   }
 }
 
-## Tarefa 2 - Revisando Laços de Repetição: While.
+## Revisando Laços de Repetição: While.
 #### Aqui iremos agora focar no laço de repetição While.
 
 >  Usando o While temos uma particularidade. Diferente do for, ele não é finalizado com um valor específico. Ele é finalizado com uma condição. Observe:
@@ -43,7 +43,7 @@ int main(){
 ```
 >  Tarefa 2 - Altere o código anterior para mostrar a frase "esse é o valor escolhido" quando a variável "parada" for igual a 9. Copie e cole o código aqui e realize o commit.
 
-## Tarefa 3 - Revisando Laços de Repetição: Do
+## Revisando Laços de Repetição: Do
 #### Agora iremos finalizar nosso último laço de repetição. Iremos usar o do.
 >  Usando o do..while temos algo bem legal: iremos colocar a condição de parada apenas no final do código. Observe:
 ```C
