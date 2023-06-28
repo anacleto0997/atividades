@@ -140,7 +140,9 @@ int main(){
 }
 ```
 >  Tarefa 3 - Altera o código para que quando seja escolhido 1, seja escrito "você escolheu cafe da manhã". Quando 2, seja escrito "você escolheu almoço". Quando 3, seja escrito "você escolheu agora jantar". Copie o código aqui e realize o commit.
->  #include <stdio.h>
+>
+´´´C
+#include <stdio.h>
 int main(){
   int incremento = 0;
   do{
@@ -163,4 +165,4 @@ int main(){
   if(incremento==99)
   	printf("Obrigado");
 }
-
+´´´
