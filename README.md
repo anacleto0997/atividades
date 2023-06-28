@@ -140,3 +140,27 @@ int main(){
 }
 ```
 >  Tarefa 3 - Altera o código para que quando seja escolhido 1, seja escrito "você escolheu cafe da manhã". Quando 2, seja escrito "você escolheu almoço". Quando 3, seja escrito "você escolheu agora jantar". Copie o código aqui e realize o commit.
+>  #include <stdio.h>
+int main(){
+  int incremento = 0;
+  do{
+    printf("\n############# CARDAPIO VIRTUAL ##############");
+    printf("\n[1]-Cafe");
+    printf("\n[2]-Almoco");
+    printf("\n[3]-Janta");
+    printf("\n[99]-Sair do Menu");
+    printf("\n#############################################");
+    printf("\nEscolha a um numero do cardapio: ");
+    scanf("%d",&incremento);
+    if(incremento==1)
+    	printf("\n voce escolheu cafe!");
+    if(incremento==2)
+    	printf("\n voce escolheu almoco!");
+    if(incremento==3)
+    	printf("\n voce escolheu janta");
+  }
+  while(incremento != 99);
+  if(incremento==99)
+  	printf("Obrigado");
+}
+
