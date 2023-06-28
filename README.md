@@ -1,6 +1,67 @@
 # Aprendendo Programação em C
 #### Um jeito diferente de aprender programação.
 
+## Revisando estrutura básica
+
+##### Aqui você irá ver de novo e praticar a estrutura básica.
+
+> Usando o compilador C online repassado para a turma {https://www.onlinegdb.com/online_c_compiler} reescreva o código abaixo:
+```C
+#include<stdio.h>
+int main(){
+	int a;
+	a = 20;
+	printf("o valor de a é: %d",a);
+}
+```
+Na estrutura básica temos:
+>	#include<stdio.h>
+>	int main()
+> 	{} //chaves para o escopo do código.
+### Atividade QT01 (0,1 pontos) - Reescreva o código criando mais duas variáveis inteiras e mostre-as na saída padrão.
+
+## Revisando estrutura condicional.
+
+##### Aqui você irá ver de novo e praticar as condicionais de C.
+
+> Usando o compilador C online repassado para a turma {https://www.onlinegdb.com/online_c_compiler} reescreva o código abaixo:
+```C
+#include <stdio.h>
+int main(){
+	int a;
+	a = 20;
+	if (a < 20){
+		printf("O valor é menor que 20");
+	}
+}
+```
+Na estrutura acima temos:
+>	O uso de uma estrutura condicional com o if
+>	Seu escopo também inicia com chaves e termina com chaves.
+### Atividade QT02 (0,1 pontos) - Reescreva o código criando mais uma estrutura if para uma frase se valores de a forem maiores que 20.
+
+## Revisando estrutura condicional com if - else.
+
+##### Aqui você irá ver de novo e praticar as condicionais de C com if - else.
+
+> Usando o compilador C online repassado para a turma {https://www.onlinegdb.com/online_c_compiler} reescreva o código abaixo:
+```C
+#include <stdio.h>
+int main(){
+	int a;
+	a = 20;
+	if (a < 20){
+		printf("O valor é menor que 20");
+	}else{
+		printf("esse é maior");
+	}
+}
+```
+Na estrutura acima temos:
+>	O uso de uma estrutura condicional com o if e outra para o else
+>	Seu escopo também inicia com chaves e termina com chaves também.
+### Atividade QT03 (0,1 pontos) - Reescreva o código com estrutura if-else para uma frase se valores forem negativos ou positivos.
+
 ## Revisando Laços de Repetição: for.
 ##### Nessa atividade iremos revisar através de código escrito em C, como podemos trabalhar com esse tipo de variável que pode armazenar dados de um único tipo.
 
