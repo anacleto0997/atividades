@@ -104,6 +104,9 @@ int main()
 }
 ```
 >	QT06 (0,5 - pontos) - Crie um código onde sejam lidos 20 votos. Os votos serão armazenados em um vetor inteiro de elementos. Cada número do voto corresponde a um time de futebol que será mostrado em um menu com 4 opções sendo elas: Flamengo, Vasco, São Paulo, Corinthians. Totalize os votos ao final e mostre na tela.
+
+
+>	QT07 (0,5 - pontos) - Refaça a mesma questão anterior utilizando o While e acrescentando uma condição de parada chamada "Totalizar" representada pelo número 99 no menu.
 ```c
 #include <stdio.h>
 int main()
@@ -136,9 +139,60 @@ int main()
     }
 ```
 
->	QT07 (0,5 - pontos) - Refaça a mesma questão anterior utilizando o While e acrescentando uma condição de parada chamada "Totalizar" representada pelo número 99 no menu.
-
 >	QT08 (0,5 - pontos) - Crie um vetor de 20 posições para ler números correspondente ao estilo musical da turma (1 - Sertanejo, 2 - Internacional, 3 - Pop, 4 - Coreano, 5 - Forró, 6 - Funk, 7 - Gospel, 8 - Rock, 9 - Eletrônica, 10 - Classica). Totalize os votos por estilo e mostre ao final. Utilize o Do..while.
+```c
+#include <stdio.h>
+
+int main()
+{
+    int votos[20]; 
+    int contador[10] = {0}; 
+    int voto;
+    int i = 0;
+
+    printf("===== Menu de Estilos Musicais =====\n");
+    printf("1 - Sertanejo\n");
+    printf("2 - Internacional\n");
+    printf("3 - Pop\n");
+    printf("4 - Coreano\n");
+    printf("5 - Forro\n");
+    printf("6 - Funk\n");
+    printf("7 - Gospel\n");
+    printf("8 - Rock\n");
+    printf("9 - Eletronica\n");
+    printf("10 - Classica\n");
+
+    
+    do {
+        printf("Digite o voto %d: ", i + 1);
+        scanf("%d", &voto);
+
+        
+        if (voto >= 1 && voto <= 10) {
+            votos[i] = voto;
+            contador[voto - 1]++; 
+            i++;
+        } else {
+            printf("Voto inválido! Digite um número de 1 a 10.\n");
+        }
+    } while (i < 20);
+
+    // Exibição dos resultados
+    printf("\n===== Resultado dos Votos =====\n");
+    printf("Sertanejo: %d votos\n", contador[0]);
+    printf("Internacional: %d votos\n", contador[1]);
+    printf("Pop: %d votos\n", contador[2]);
+    printf("Coreano: %d votos\n", contador[3]);
+    printf("Forró: %d votos\n", contador[4]);
+    printf("Funk: %d votos\n", contador[5]);
+    printf("Gospel: %d votos\n", contador[6]);
+    printf("Rock: %d votos\n", contador[7]);
+    printf("Eletrônica: %d votos\n", contador[8]);
+    printf("Clássica: %d votos\n", contador[9]);
+
+    return 0;
+}
+```
 
 ## Revisando estrutura básica
 
