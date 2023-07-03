@@ -104,6 +104,37 @@ int main()
 }
 ```
 >	QT06 (0,5 - pontos) - Crie um código onde sejam lidos 20 votos. Os votos serão armazenados em um vetor inteiro de elementos. Cada número do voto corresponde a um time de futebol que será mostrado em um menu com 4 opções sendo elas: Flamengo, Vasco, São Paulo, Corinthians. Totalize os votos ao final e mostre na tela.
+```c
+#include <stdio.h>
+int main()
+{
+    int votos[20]; 
+    int contador[4] = {0};
+    int voto = 0;
+    int i = 0;
+
+    printf("===== Menu de Times de Futebol =====\n");
+    printf("1 - Flamengo\n");
+    printf("2 - Vasco\n");
+    printf("3 - Sao Paulo\n");
+    printf("4 - Corinthians\n");
+    printf("99 - Totalizar\n");
+
+    
+    while (voto != 99 && i < 20) {
+        printf("Digite o voto %d (ou 99 para totalizar): ", i + 1);
+        scanf("%d", &voto);
+
+        
+        if (voto >= 1 && voto <= 4) {
+            votos[i] = voto;
+            contador[voto - 1]++; 
+            i++;
+        } else if (voto != 99) {
+            printf("Voto invalido! Digite um numero de 1 a 4 ou 99 para totalizar.\n");
+        }
+    }
+```
 
 >	QT07 (0,5 - pontos) - Refaça a mesma questão anterior utilizando o While e acrescentando uma condição de parada chamada "Totalizar" representada pelo número 99 no menu.
 
