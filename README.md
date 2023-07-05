@@ -4,7 +4,54 @@
 # Funções em C
 
 >	Declare funções. Uma com opção de menu para o R.U, Biblioteca Central, Teatro ou H.U e mostre-os na tela. Outra que mostre apenas uma saudação do dia após leitura do nome da pessoa. (QT9 - 0,25)
+```c
+include <stdio.h>
 
+void exibirMenu() {
+    printf("Opcoes:\n");
+    printf("1. R.U\n");
+    printf("2. Biblioteca Central\n");
+    printf("3. Teatro\n");
+    printf("4. H.U\n");
+}
+
+void exibirSaudacao() {
+    char nome[50];
+    printf("Digite seu nome: ");
+    scanf("%s", nome);
+    printf("Bom dia, %s!\n", nome);
+}
+
+int main() {
+    int opcao;
+
+    exibirMenu();
+    printf("Digite uma opcao: ");
+    scanf("%d", &opcao);
+
+    switch (opcao) {
+        case 1:
+            printf("Voce selecionou R.U\n");
+            break;
+        case 2:
+            printf("Voce selecionou Biblioteca Central\n");
+            break;
+        case 3:
+            printf("Voce selecionou Teatro\n");
+            break;
+        case 4:
+            printf("Voce selecionou H.U\n");
+            break;
+        default:
+            printf("Opcao invalida\n");
+            break;
+    }
+
+    exibirSaudacao();
+
+    return 0;
+}
+```
 >	Declare funções para: Totalizar a quantidade de árvores em cada setor(CCHL, CCE, CT, CCN, DIE, CCS) da ufpi através de entrada de dados pelo teclado. Ao final mostrar o total de árvores na UFPI. (Q10 - 25).
 
 # Vetores em C
