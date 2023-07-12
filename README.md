@@ -72,7 +72,7 @@ typedef struct {
 
 int main() {
     Cadastro cadastros[MAX_PESSOAS]; 
-    int numCadastros = 0; // Contador de cadastros realizados
+    int numCadastros = 0; 
     int opcao;
 
     while (1) {
