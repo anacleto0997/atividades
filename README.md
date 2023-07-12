@@ -480,7 +480,7 @@ int main()
         }
     } while (i < 20);
 
-    // Exibição dos resultados
+    
     printf("\n===== Resultado dos Votos =====\n");
     printf("Sertanejo: %d votos\n", contador[0]);
     printf("Internacional: %d votos\n", contador[1]);
