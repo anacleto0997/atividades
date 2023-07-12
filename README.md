@@ -550,7 +550,20 @@ Na estrutura acima temos:
 >	O uso de uma estrutura condicional com o if
 >	Seu escopo também inicia com chaves e termina com chaves.
 ### Atividade QT02 (0,1 pontos) - Reescreva o código criando mais uma estrutura if para uma frase se valores de a forem maiores que 20.
-
+```c
+#include <stdio.h>
+int main(){
+	int a;
+	a = 20;
+	if (a < 20){
+		printf("O valor e menor que 20\n");
+	}else{
+	if (a > 20){	
+		printf("O valor e maior que 20\n");			
+	}
+}
+}
+```
 ## Revisando estrutura condicional com if - else.
 
 ##### Aqui você irá ver de novo e praticar as condicionais de C com if - else.
