@@ -58,6 +58,72 @@ int main(void)
 }
 ```
 >	QT11(0,25) - Crie estruturas novas e correlacione com sua realidade. Use estruturas de repetição e estruturas switch. Ao final, as fichas com os cadastros deverão ser apresentadas.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX_PESSOAS 100
+
+// Definição da estrutura de cadastro
+typedef struct {
+    char nome[50];
+    int idade;
+    char email[50];
+} Cadastro;
+
+int main() {
+    Cadastro cadastros[MAX_PESSOAS]; // Array para armazenar os cadastros
+    int numCadastros = 0; // Contador de cadastros realizados
+    int opcao;
+
+    while (1) {
+        printf("----- Menu -----\n");
+        printf("1. Cadastrar pessoa\n");
+        printf("2. Exibir fichas de cadastro\n");
+        printf("3. Sair\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        switch (opcao) {
+            case 1:
+                if (numCadastros < MAX_PESSOAS) {
+                    // Coletar os dados do cadastro
+                    printf("Digite o nome da pessoa: ");
+                    scanf("%s", cadastros[numCadastros].nome);
+                    printf("Digite a idade da pessoa: ");
+                    scanf("%d", &cadastros[numCadastros].idade);
+                    printf("Digite o email da pessoa: ");
+                    scanf("%s", cadastros[numCadastros].email);
+
+                    numCadastros++;
+                    printf("Cadastro realizado com sucesso!\n");
+                } else {
+                    printf("Limite máximo de cadastros atingido!\n");
+                }
+                break;
+
+            case 2:
+                printf("----- Fichas de Cadastro -----\n");
+                for (int i = 0; i < numCadastros; i++) {
+                    printf("Nome: %s\n", cadastros[i].nome);
+                    printf("Idade: %d\n", cadastros[i].idade);
+                    printf("Email: %s\n", cadastros[i].email);
+                    printf("-----------------------------\n");
+                }
+                break;
+
+            case 3:
+                printf("Saindo...\n");
+                exit(0);
+
+            default:
+                printf("Opção inválida! Por favor, escolha uma opção válida.\n");
+        }
+    }
+
+    return 0;
+}
+```
 >	QT12(0,25) - Crie estruturas em C para organizar alguma necessidade sua e realize o cadastro dos registros. Utilize estruturas de loop para realizar mais de um registro. Ao final, apresente todos os cadastros realizados. Justifique todo o seu código.
 
 # Funções em C
