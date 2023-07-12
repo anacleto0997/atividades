@@ -125,6 +125,57 @@ int main() {
 }
 ```
 >	QT12(0,25) - Crie estruturas em C para organizar alguma necessidade sua e realize o cadastro dos registros. Utilize estruturas de loop para realizar mais de um registro. Ao final, apresente todos os cadastros realizados. Justifique todo o seu código.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX_REGISTROS 5
+
+struct registro_tipo_sanguineo
+{
+  char nome[100];
+  char tipo_sanguineo[4];
+  int idade;
+};
+
+int main()
+{
+  struct registro_tipo_sanguineo registros[MAX_REGISTROS];
+  int i;
+
+  printf("----------- Cadastro de Tipos Sanguineos -----------\n\n");
+
+  for (i = 0; i < MAX_REGISTROS; i++)
+  {
+    printf("\nRegistro %d\n", i + 1);
+
+    printf("Nome: ");
+    fgets(registros[i].nome, sizeof(registros[i].nome), stdin);
+    fflush(stdin);
+
+    printf("Tipo Sanguineo: ");
+    fgets(registros[i].tipo_sanguineo, sizeof(registros[i].tipo_sanguineo), stdin);
+    fflush(stdin);
+
+    printf("Idade: ");
+    scanf("%d", &registros[i].idade);
+    fflush(stdin);
+  }
+
+  printf("\n\n----------- Registros de Tipos Sanguineos -----------\n\n");
+
+  for (i = 0; i < MAX_REGISTROS; i++)
+  {
+    printf("Registro %d\n", i + 1);
+    printf("Nome: %s", registros[i].nome);
+    printf("Tipo Sanguineo: %s", registros[i].tipo_sanguineo);
+    printf("Idade: %d\n", registros[i].idade);
+    printf("\n");
+  }
+
+  return 0;
+}
+```
 
 # Funções em C
 
