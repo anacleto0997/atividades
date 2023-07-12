@@ -600,7 +600,7 @@ int main(){
 }
 ```
 >  Tarefa 2 - Altere o código anterior para mostrar a frase "esse é o valor escolhido" quando a variável "parada" for igual a 9. Copie e cole o código aqui e realize o commit.
-```
+```c
 #include <stdio.h>
 int main(){
 	int parada = 0;
