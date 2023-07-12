@@ -516,7 +516,21 @@ Na estrutura básica temos:
 >	int main()
 > 	{} //chaves para o escopo do código.
 ### Atividade QT01 (0,1 pontos) - Reescreva o código criando mais duas variáveis inteiras e mostre-as na saída padrão.
-
+```c
+#include<stdio.h>
+int main(){
+	int a;
+	a = 20;
+	int b;
+	b = 30;
+	int c;
+	c = 40;
+	printf("o valor de a e: %d\n",a);
+	printf("o valor de b e: %d\n",b);
+	printf("o valor de c e: %d\n",c);
+	return 0;
+}
+```
 ## Revisando estrutura condicional.
 
 ##### Aqui você irá ver de novo e praticar as condicionais de C.
