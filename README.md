@@ -64,7 +64,6 @@ int main(void)
 
 #define MAX_PESSOAS 100
 
-// Definição da estrutura de cadastro
 typedef struct {
     char nome[50];
     int idade;
@@ -72,7 +71,7 @@ typedef struct {
 } Cadastro;
 
 int main() {
-    Cadastro cadastros[MAX_PESSOAS]; // Array para armazenar os cadastros
+    Cadastro cadastros[MAX_PESSOAS]; 
     int numCadastros = 0; // Contador de cadastros realizados
     int opcao;
 
