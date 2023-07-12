@@ -86,7 +86,7 @@ int main() {
         switch (opcao) {
             case 1:
                 if (numCadastros < MAX_PESSOAS) {
-                    // Coletar os dados do cadastro
+                   
                     printf("Digite o nome da pessoa: ");
                     scanf("%s", cadastros[numCadastros].nome);
                     printf("Digite a idade da pessoa: ");
