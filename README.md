@@ -327,6 +327,20 @@ int main()
 
 ```
 >	QT05 (0,25 pontos) - Altere o código acima para que seja lido diretamente do teclado um valor inteiro, ao invés de atribuído. Mostre todos os valores lidos ao final.
+```c
+#include <stdio.h>
+int main()
+{
+    int meuVetor[10];
+    for (int i=0; i<20; i++){
+        meuVetor[i] = i*2;
+    }
+    for (int i=0; i<20; i++){
+        printf("Posicao %d e valor => %d \n",i,meuVetor[i]);
+    }
+    return 0;
+}
+```
 
 Em algumas situações temos que impor condições para obter dados de tudo o que foi lido e armazenado em uma lista de vetores. Vejamos um exemplo no código abaixo:
 ```C
