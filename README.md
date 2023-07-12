@@ -558,7 +558,23 @@ Na estrutura acima temos:
 >	O uso de uma estrutura condicional com o if e outra para o else
 >	Seu escopo também inicia com chaves e termina com chaves também.
 ### Atividade QT03 (0,1 pontos) - Reescreva o código com estrutura if-else para uma frase se valores forem negativos ou positivos.
-
+```c
+#include <stdio.h>
+int main(){
+	int a;
+	a = 0;
+	if (a < 0){
+		printf("O valor e negativo");
+	}else{
+		printf("esse e negativo\n");
+	if (a > 0){
+        printf("O valor e positivo");
+    }else{  
+    	printf("esse e positivo\n");
+	}
+	}
+}
+``
 ## Revisando Laços de Repetição: for.
 ##### Nessa atividade iremos revisar através de código escrito em C, como podemos trabalhar com esse tipo de variável que pode armazenar dados de um único tipo.
 
