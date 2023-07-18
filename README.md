@@ -72,6 +72,45 @@ int main() {
     return 0;
 }
 ```
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+// Definir a estrutura para a passagem de ônibus
+struct PassagemOnibus {
+    char nomePassageiro[50];
+    int numeroAssento;
+    float precoPassagem;
+};
+
+int main() {
+    // Criar um array de passagens de ônibus
+    struct PassagemOnibus passagensOnibus[10];
+
+    // Ler e preencher os detalhes das passagens de ônibus
+    for (int i = 0; i < 10; i++) {
+        printf("\nNome do passageiro %d: ", i + 1);
+        scanf("%s", passagensOnibus[i].nomePassageiro);
+
+        printf("Número do assento: ");
+        scanf("%d", &passagensOnibus[i].numeroAssento);
+
+        printf("Preço da passagem: ");
+        scanf("%f", &passagensOnibus[i].precoPassagem);
+    }
+
+    // Imprimir todos os detalhes das passagens
+    printf("\n--- Detalhes das Passagens de Ônibus ---\n");
+    for (int i = 0; i < 10; i++) {
+        printf("\nPassageiro %d: %s", i + 1, passagensOnibus[i].nomePassageiro);
+        printf("\nAssento: %d", passagensOnibus[i].numeroAssento);
+        printf("\nPreço da Passagem: %.2f", passagensOnibus[i].precoPassagem);
+        printf("\n------------------------");
+    }
+
+    return 0;
+}
+```
 
 
 # Registros em C - Uma forma legal de criar uma "ficha" sobre alguma coisa.
