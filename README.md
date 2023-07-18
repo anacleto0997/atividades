@@ -37,6 +37,41 @@ int main() {
 }
 ```
 >	QT13(crucial) - Altere o código acima para preencher um vetor de registros de 10 posições, ems seguida mostre todos os pedidos feitos. Após isso, crie seu próprio código de vetor de registro. Comente cada linha do código de acordo com seu entendimento.
+>
+>
+```C
+>#include <stdio.h>
+#include<stdlib.h>
+
+//Definindo a estrutura e criando o nosso cardápio
+struct Cardapio{
+    char tipoTapioca[30];
+    int qtdBolo;
+    char tipoCafe[20];
+};
+//Programa principal
+int main() {
+    //criando nosso vetor 'rest' do tipo estrutura de cardápio.
+    struct Cardapio rest[10];
+    //lendo os pedidos e preenchendo nosso registro.
+    for (int i=1; i<11;i++){
+        printf("\nTipo tapioca.: ");
+        scanf("%s",rest[i].tipoTapioca);
+        printf("\nQtd Bolo.: ");
+        scanf("%d",&rest[i].qtdBolo);
+        printf("\ntipo cafe.: ");
+        scanf("%s",rest[i].tipoCafe);
+    }
+//Imprimindo todos os pedidos feitos	
+    for (int i=1; i<11; i++){
+        printf("\n-------------------------------------");
+        printf("\ntapioca => %s",rest[i].tipoTapioca);
+        printf("\nbolos=> %d",rest[i].qtdBolo);
+        printf("\ncafe=> %s",rest[i].tipoCafe);
+    }
+    return 0;
+}
+```
 
 
 # Registros em C - Uma forma legal de criar uma "ficha" sobre alguma coisa.
