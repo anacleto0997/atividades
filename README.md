@@ -122,7 +122,7 @@ int main() {
 }
 ```
 resposta:
-```
+```c
 #include <stdio.h>
 
 void cabecalho(){
