@@ -144,7 +144,8 @@ int questoes(){
     printf("\n[8] - Funções com parâmetros");
     printf("\n[9] - Vetores");
     printf("\n[10] - Registros");
-    printf("\n[11] - Sair");
+    printf("\n[11] - copa do mundo");
+    printf("\n[12] - Sair");
     printf("\nQual questão você deseja fazer.: ");
     scanf("%d",&questao);
     return questao;
@@ -300,43 +301,85 @@ int x;
         printf("\nerrou menos Um ponto");
     }                       
 }
+void questao11(){
+    int x;
+    fflush(stdin);
+    printf("\n\n qual selecao tem mais copas do mundo?");
+    printf("\n[1] - Brasil");
+    printf("\n[2] - italia");
+    printf("\n\nEscolha.: ");
+    scanf("%d",&x);
+    if (x == 1){
+        printf("\nacertou um ponto.");
+    }else{
+        printf("\nerrou menos Um ponto");
+    }
+}
 int main() {
     int opc;
     cabecalho();
     printf("\n----------------------------------------------------------------------");
-    opc = questoes();
-    switch(opc){
-        case 1: {
-            questao01();break;
+
+    do {
+        printf("\n");
+        printf("\n[1] - Tecnologia");
+        printf("\n[2] - Logica");
+        printf("\n[3] - Estrutura basica de C");
+        printf("\n[4] - Variaveis");
+        printf("\n[5] - Tipo de dados e condicionais");
+        printf("\n[6] - Laços de repeticao");
+        printf("\n[7] - Funcoes sem parametros");
+        printf("\n[8] - Funcoes com parametros");
+        printf("\n[9] - Vetores");
+        printf("\n[10] - registros");
+        printf("\n[11] - copa do mundo");
+        printf("\n[12] - Sair");
+        printf("\nQual questao voce deseja fazer? Digite o numero correspondente: ");
+        scanf("%d", &opc);
+
+        switch(opc) {
+            case 1:
+                questao01();
+                break;
+            case 2:
+                questao02();
+                break;
+            case 3:
+                questao03();
+                break;
+            case 4:
+                questao04();
+                break;
+            case 5:
+                questao05();
+                break;
+            case 6:
+                questao06();
+                break;
+            case 7:
+                questao07();
+                break;
+            case 8:
+                questao08();
+                break;
+            case 9:
+                questao09();
+                break;
+            case 10:
+                questao10();
+                break;
+            case 11:
+                questao11();
+                break;
+            case 12:
+                printf("\nSaindo do programa.\n");
+                break;
+            default:
+                printf("\nOpcao invalida. Tente novamente.\n");
+                break;
         }
-        case 2: {
-            questao02();break;
-        }
-        case 3:{
-            questao03();break;
-        }
-        case 4:{
-            questao04();break;
-        }
-        case 5:{
-            questao05();break;
-        }
-        case 6:{
-            questao06();break;
-        }
-        case 7:{
-            questao07();break;
-        }
-        case 8:{
-            questao08();break;
-        }
-        case 9:{
-            questao09();break;
-        }
-        case 10:{
-            questao10();break;
-        }
-    }
+    } while (opc != 12);
+
     return 0;
 }
 ```
