@@ -121,6 +121,226 @@ int main() {
     return 0;
 }
 ```
+resposta:
+```
+#include <stdio.h>
+
+void cabecalho(){
+    printf("\nMinistério da Educação");
+    printf("\nUniversidade Federal do Piauí");
+    printf("\nDepartamento de Tecnologia");
+    printf("\nCurso de Engenharia Civil");
+}
+
+int questoes(){
+    int questao;
+    printf("\n[1] - Tecnologia");
+    printf("\n[2] - Lógica");
+    printf("\n[3] - Estrutura básica de C");
+    printf("\n[4] - Variaveis");
+    printf("\n[5] - Tipo de dados e condicionais");
+    printf("\n[6] - Laços de repetição");
+    printf("\n[7] - Funções sem parâmetros");
+    printf("\n[8] - Funções com parâmetros");
+    printf("\n[9] - Vetores");
+    printf("\n[10] - Registros");
+    printf("\n[11] - Sair");
+    printf("\nQual questão você deseja fazer.: ");
+    scanf("%d",&questao);
+    return questao;
+}
+
+void questao01(){
+    int x;
+    fflush(stdin);
+    printf("\n\nO que significa na sua opinião 'informática'?");
+    printf("\n[1] - Tecnologias de processamento em meio digital");
+    printf("\n[2] - Informação automática");
+    printf("\n\nEscolha.: ");
+    scanf("%d",&x);
+    if (x == 1){
+        printf("\nmenos um ponto.");
+    }else{
+        printf("\nacertou. Um ponto");
+    }
+}
+
+void questao02(){
+ int x;
+    fflush(stdin);
+    printf("\n\nO Pode-se afirmar que o xou é um operador de:?");
+    printf("\n[1] - disjunção exclusiva.");
+    printf("\n[2] - conjunção.");
+    printf("\n\nEscolha.: ");
+    scanf("%d",&x);
+    if (x == 1){
+        printf("\nacertou um ponto.");
+    }else{
+        printf("\nerrou menos Um ponto");
+    }
+}   
+
+
+void questao03(){
+int x;
+    fflush(stdin);
+    printf("\n\nO Qual é a estrutura básica de um programa em C?");
+    printf("\n[1] -  estruturado em blocos de código.");
+    printf("\n[2] - estruturado em numeros");
+    printf("\n\nEscolha.: ");
+    scanf("%d",&x);
+    if (x == 1){
+        printf("\nacertou um ponto.");
+    }else{
+        printf("\nerrou menos Um ponto");
+    }
+
+}
+
+void questao04(){
+int x;
+    fflush(stdin);
+    printf("\n\nO Quais desses, sao tipos de variáveis na programação??");
+    printf("\n[1] - Variável número do tipo inteiro");
+    printf("\n[2] - Variavel numero do tipo decimal");
+    printf("\n\nEscolha.: ");
+    scanf("%d",&x);
+    if (x == 1){
+        printf("\nacertou um ponto.");
+    }else{
+        printf("\nerrou menos Um ponto");
+    }
+
+}
+void questao05(){
+int x;
+    fflush(stdin);
+    printf("\n\nO O que é condicional simples programação?");
+    printf("\n[1] - definimos uma situação no código que só irá ocorrer se a condição for verdadeira");
+    printf("\n[2] -  definimos uma situação no código que só irá ocorrer se a condição for falsa");
+    printf("\n\nEscolha.: ");
+    scanf("%d",&x);
+    if (x == 1){
+        printf("\nacertou um ponto.");
+    }else{
+        printf("\nerrou menos Um ponto");
+    }    
+}
+
+void questao06(){
+int x;
+    fflush(stdin);
+    printf("\n\nO Qual e o proposito principal dos lacos de repeticao na programacao?");
+    printf("\n[1] - permitir que um conjunto de comandosseja executado varias vezes");
+    printf("\n[2] - Ajudar a depurar erros no codigo");
+    printf("\n\nEscolha.: ");
+    scanf("%d",&x);
+    if (x == 1){
+        printf("\nacertou um ponto.");
+    }else{
+        printf("\nerrou menos Um ponto");
+    }        
+}
+
+void questao07(){
+int x;
+    fflush(stdin);
+    printf("\n\nO o que sao funcoes sem parametros na programcao?");
+    printf("\n[1] - funcoes que nao recebem nenhum valor de entrada ");
+    printf("\n[2] - funcoes que nao podem ser chamadas de programa");
+    printf("\n\nEscolha.: ");
+    scanf("%d",&x);
+    if (x == 1){
+        printf("\nacertou um ponto.");
+    }else{
+        printf("\nerrou menos Um ponto");
+    }            
+}
+
+void questao08(){
+int x;
+    fflush(stdin);
+    printf("\n\nO o que sao parametros em uma funcao com parametros na programacao?");
+    printf("\n[1] - valores de entrada que a funcao recebe quando e chamada ");
+    printf("\n[2] - variaveis locais que podem ser usadas em qualquer parte do codigo");
+    printf("\n\nEscolha.: ");
+    scanf("%d",&x);
+    if (x == 1){
+        printf("\nacertou um ponto.");
+    }else{
+        printf("\nerrou menos Um ponto");
+    }                
+}
+
+void questao09(){
+int x;
+    fflush(stdin);
+    printf("\n\nO o que sao vetores na programacao?");
+    printf("\n[1] - sequencias ordenadas de elementos do mesmo tipo, ecessadas por um indice ");
+    printf("\n[2] - variaveis que armazenam apenas valores do tipo string");
+    printf("\n\nEscolha.: ");
+    scanf("%d",&x);
+    if (x == 1){
+        printf("\nacertou um ponto.");
+    }else{
+        printf("\nerrou menos Um ponto");
+    }                    
+}
+void questao10(){
+int x;
+    fflush(stdin);
+    printf("\n\nO o que sao registros na programacao?");
+    printf("\n[1] - conjuntos de diferentes tipos de dados agrupados em uma unica estrutura ");
+    printf("\n[2] - variaveis que armazenam apenas valores numericos");
+    printf("\n\nEscolha.: ");
+    scanf("%d",&x);
+    if (x == 1){
+        printf("\nacertou um ponto.");
+    }else{
+        printf("\nerrou menos Um ponto");
+    }                       
+}
+int main() {
+    int opc;
+    cabecalho();
+    printf("\n----------------------------------------------------------------------");
+    opc = questoes();
+    switch(opc){
+        case 1: {
+            questao01();break;
+        }
+        case 2: {
+            questao02();break;
+        }
+        case 3:{
+            questao03();break;
+        }
+        case 4:{
+            questao04();break;
+        }
+        case 5:{
+            questao05();break;
+        }
+        case 6:{
+            questao06();break;
+        }
+        case 7:{
+            questao07();break;
+        }
+        case 8:{
+            questao08();break;
+        }
+        case 9:{
+            questao09();break;
+        }
+        case 10:{
+            questao10();break;
+        }
+    }
+    return 0;
+}
+```
+
 
 
 ## Vetor de registros
